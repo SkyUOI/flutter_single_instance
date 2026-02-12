@@ -123,7 +123,7 @@ abstract class FlutterSingleInstance {
   /// If another instance is running, its information will be stored in [_instance] for use by
   /// [focus].
   ///
-  /// [maxRetries] specifies the maximum number of attempts until this instance ultimately reports as a subsequent one. 
+  /// [maxRetries] specifies the maximum number of attempts until this instance ultimately reports as a subsequent one.
   /// If set to `1` (default) this instance immediately reports as subsequent if another instance is already running.
   /// [retryInterval] specifies the interval between retries (defaults to `1000` milliseconds).
   ///

@@ -29,40 +29,53 @@ class FocusRequest extends $pb.GeneratedMessage {
     return $result;
   }
   FocusRequest._() : super();
-  factory FocusRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FocusRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FocusRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FocusRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FocusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'flutter_single_instance'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.OY)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FocusRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'flutter_single_instance'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.OY)
     ..aOB(2, _omitFieldNames ? '' : 'bringToFront', protoName: 'bringToFront')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FocusRequest clone() => FocusRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FocusRequest copyWith(void Function(FocusRequest) updates) => super.copyWith((message) => updates(message as FocusRequest)) as FocusRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FocusRequest copyWith(void Function(FocusRequest) updates) =>
+      super.copyWith((message) => updates(message as FocusRequest))
+          as FocusRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FocusRequest create() => FocusRequest._();
   FocusRequest createEmptyInstance() => create();
-  static $pb.PbList<FocusRequest> createRepeated() => $pb.PbList<FocusRequest>();
+  static $pb.PbList<FocusRequest> createRepeated() =>
+      $pb.PbList<FocusRequest>();
   @$core.pragma('dart2js:noInline')
-  static FocusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FocusRequest>(create);
+  static FocusRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FocusRequest>(create);
   static FocusRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$core.int> get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($core.List<$core.int> v) { $_setBytes(0, v); }
+  set metadata($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
@@ -71,7 +84,10 @@ class FocusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get bringToFront => $_getBF(1);
   @$pb.TagNumber(2)
-  set bringToFront($core.bool v) { $_setBool(1, v); }
+  set bringToFront($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBringToFront() => $_has(1);
   @$pb.TagNumber(2)
@@ -93,40 +109,52 @@ class FocusResponse extends $pb.GeneratedMessage {
     return $result;
   }
   FocusResponse._() : super();
-  factory FocusResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FocusResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FocusResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FocusResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FocusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'flutter_single_instance'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FocusResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'flutter_single_instance'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'success')
     ..aOS(2, _omitFieldNames ? '' : 'error')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FocusResponse clone() => FocusResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FocusResponse copyWith(void Function(FocusResponse) updates) => super.copyWith((message) => updates(message as FocusResponse)) as FocusResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FocusResponse copyWith(void Function(FocusResponse) updates) =>
+      super.copyWith((message) => updates(message as FocusResponse))
+          as FocusResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FocusResponse create() => FocusResponse._();
   FocusResponse createEmptyInstance() => create();
-  static $pb.PbList<FocusResponse> createRepeated() => $pb.PbList<FocusResponse>();
+  static $pb.PbList<FocusResponse> createRepeated() =>
+      $pb.PbList<FocusResponse>();
   @$core.pragma('dart2js:noInline')
-  static FocusResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FocusResponse>(create);
+  static FocusResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FocusResponse>(create);
   static FocusResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.bool get success => $_getBF(0);
   @$pb.TagNumber(1)
-  set success($core.bool v) { $_setBool(0, v); }
+  set success($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSuccess() => $_has(0);
   @$pb.TagNumber(1)
@@ -135,7 +163,10 @@ class FocusResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get error => $_getSZ(1);
   @$pb.TagNumber(2)
-  set error($core.String v) { $_setString(1, v); }
+  set error($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
@@ -146,11 +177,12 @@ class FocusServiceApi {
   $pb.RpcClient _client;
   FocusServiceApi(this._client);
 
-  $async.Future<FocusResponse> focus($pb.ClientContext? ctx, FocusRequest request) =>
-    _client.invoke<FocusResponse>(ctx, 'FocusService', 'Focus', request, FocusResponse())
-  ;
+  $async.Future<FocusResponse> focus(
+          $pb.ClientContext? ctx, FocusRequest request) =>
+      _client.invoke<FocusResponse>(
+          ctx, 'FocusService', 'Focus', request, FocusResponse());
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

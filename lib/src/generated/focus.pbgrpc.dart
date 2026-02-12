@@ -29,10 +29,10 @@ class FocusServiceClient extends $grpc.Client {
   FocusServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+      : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$0.FocusResponse> focus($0.FocusRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$0.FocusResponse> focus($0.FocusRequest request,
+      {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$focus, request, options: options);
   }
 }
@@ -51,9 +51,11 @@ abstract class FocusServiceBase extends $grpc.Service {
         ($0.FocusResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$0.FocusResponse> focus_Pre($grpc.ServiceCall call, $async.Future<$0.FocusRequest> request) async {
+  $async.Future<$0.FocusResponse> focus_Pre(
+      $grpc.ServiceCall call, $async.Future<$0.FocusRequest> request) async {
     return focus(call, await request);
   }
 
-  $async.Future<$0.FocusResponse> focus($grpc.ServiceCall call, $0.FocusRequest request);
+  $async.Future<$0.FocusResponse> focus(
+      $grpc.ServiceCall call, $0.FocusRequest request);
 }

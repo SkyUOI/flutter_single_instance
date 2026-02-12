@@ -44,12 +44,18 @@ final $typed_data.Uint8List focusResponseDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> FocusServiceBase$json = {
   '1': 'FocusService',
   '2': [
-    {'1': 'Focus', '2': '.flutter_single_instance.FocusRequest', '3': '.flutter_single_instance.FocusResponse', '4': {}},
+    {
+      '1': 'Focus',
+      '2': '.flutter_single_instance.FocusRequest',
+      '3': '.flutter_single_instance.FocusResponse',
+      '4': {}
+    },
   ],
 };
 
 @$core.Deprecated('Use focusServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> FocusServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    FocusServiceBase$messageJson = {
   '.flutter_single_instance.FocusRequest': FocusRequest$json,
   '.flutter_single_instance.FocusResponse': FocusResponse$json,
 };
@@ -58,4 +64,3 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> FocusServi
 final $typed_data.Uint8List focusServiceDescriptor = $convert.base64Decode(
     'CgxGb2N1c1NlcnZpY2USWAoFRm9jdXMSJS5mbHV0dGVyX3NpbmdsZV9pbnN0YW5jZS5Gb2N1c1'
     'JlcXVlc3QaJi5mbHV0dGVyX3NpbmdsZV9pbnN0YW5jZS5Gb2N1c1Jlc3BvbnNlIgA=');
-

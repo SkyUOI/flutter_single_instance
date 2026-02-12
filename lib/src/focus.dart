@@ -29,6 +29,7 @@ class FocusService extends FocusServiceBase {
 
     if (request.bringToFront) {
       try {
+        await windowManager.show();
         await windowManager.focus();
 
         logger.finest('Window focused');
